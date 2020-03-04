@@ -12,18 +12,18 @@ let appData = {
     savings : false
 };
 
-// for (let i = 0; i < 2; i++) {
-//     let questFirst = prompt("Введите обязательную статью расходов в этом месяце", "Качество"),
-//         questSecond = +prompt("Во сколько обойдется?", 100000);
+for (let i = 0; i < 2; i++) {
+    let questFirst = prompt("Введите обязательную статью расходов в этом месяце", "Качество"),
+        questSecond = +prompt("Во сколько обойдется?", 100000);
 
-//         if (typeof(questFirst) === 'string' && typeof(questFirst) != null && typeof(questSecond) != null 
-//             && questFirst != '' && questSecond != '' && questFirst.length < 50) {
-//                 console.log("done");
-//                 appData.expenses[questFirst] = questSecond; 
-//         } else {
-//             i--;
-//         }
-// }
+        if (typeof(questFirst) === 'string' && typeof(questFirst) != null && typeof(questSecond) != null 
+            && questFirst != '' && questSecond != '' && questFirst.length < 50) {
+                console.log("done");
+                appData.expenses[questFirst] = questSecond; 
+        } else {
+            i--;
+        }
+}
 
 // cycle while
 // let i = 0;
@@ -42,20 +42,20 @@ let appData = {
 // }
 
 //cycle do-while
-let i = 0;
-do {
-    i++;
-    let questFirst = prompt("Введите обязательную статью расходов в этом месяце", "Качество"),
-        questSecond = +prompt("Во сколько обойдется?", 100000);
+// let i = 0;
+// do {
+//     i++;
+//     let questFirst = prompt("Введите обязательную статью расходов в этом месяце", "Качество"),
+//         questSecond = +prompt("Во сколько обойдется?", 100000);
 
-        if (typeof(questFirst) === 'string' && typeof(questFirst) != null && typeof(questSecond) != null 
-            && questFirst != '' && questSecond != '' && questFirst.length < 50) {
-                console.log("done");
-                appData.expenses[questFirst] = questSecond; 
-        } else {
-            i--;
-        }
-} while(i < 2);
+//         if (typeof(questFirst) === 'string' && typeof(questFirst) != null && typeof(questSecond) != null 
+//             && questFirst != '' && questSecond != '' && questFirst.length < 50) {
+//                 console.log("done");
+//                 appData.expenses[questFirst] = questSecond; 
+//         } else {
+//             i--;
+//         }
+// } while(i < 2);
 
 appData.moneyPerDay = appData.budget / 30;
 
